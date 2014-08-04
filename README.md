@@ -8,7 +8,7 @@ software-related news and articles.
 ## Getting Start
 
 SoftwareNiagara.com is built with Middleman - a static site generator written in
-Ruby. Using Middleman allow us to store all of the source and content for the
+Ruby. Using Middleman allows us to store all of the source and content for the
 website in GitHub. It also allows us to accept contributions from the community
 via pull requests.
 
@@ -25,9 +25,10 @@ Visit the website on your machine at `http://localhost:4567`.
 
 ## Contributing
 
-See `CONTRIBUTING.md` for instructions on contributing content.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for instructions on contributing
+content.
 
 ## License
 
 SoftwareNiagara.com uses an open publishing model and is developed as an open
-source project. See `LICENSE` for copyright and license information.
+source project. See [LICENSE](LICENSE) for copyright and license information.
