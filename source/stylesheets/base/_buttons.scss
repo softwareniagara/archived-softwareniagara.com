@@ -9,4 +9,11 @@ input[type="submit"] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+
+  &.alt {
+    background-color: $dark-gray;
+    &:hover {
+      background-color: lighten($dark-gray, 5%);
+    }
+  }
 }

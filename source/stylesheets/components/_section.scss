@@ -13,20 +13,18 @@
     @include outer-container();
   }
 
-  .hero {
-    color: white;
-
-    .actions {
-      margin-top: $gutter;
-    }
+  .actions {
+    margin-top: $gutter;
   }
 }
 
 #introduction {
-  background: $dark-gray url('../images/splash.jpg') center center no-repeat;
+  background: $blue url('../images/splash.jpg') center center no-repeat;
   background-size: cover;
+  color: white;
   display: table;
   text-align: center;
+  text-shadow: 0 -1px rgba($dark-gray, 0.25);
   width: 100%;
 
   h1 {
