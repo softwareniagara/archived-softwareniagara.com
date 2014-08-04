@@ -1,0 +1,22 @@
+#header {
+  background: $dark-gray;
+  @include clearfix;
+  color: white;
+  padding: .75em 1em;
+
+  a,a:hover {
+    color: inherit;
+  }
+
+  .logo {
+    display: inline-block;
+    float: left;
+    height: 60px;
+  }
+
+  .toggle {
+    float: right;
+    font-size: 50px;
+    margin-top: 5px;
+  }
+}
