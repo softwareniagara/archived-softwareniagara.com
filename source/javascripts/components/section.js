@@ -1,7 +1,7 @@
 (function($) {
   $(document).ready(function() {
     var resizeIntroduction = function() {
-      var height = $(window).height();
+      var height = $(window).height() - 89;
       $('#introduction').css({height: height + 'px'});
     };
 

@@ -1,5 +1,6 @@
 .section {
   text-align: left;
+  padding: $gutter*2 $gutter;
 
   h1 { @extend .h1; }
   h2 { @extend .h2; }
@@ -13,10 +14,7 @@
   }
 
   .hero {
-    background: rgba($dark-gray, 0.35);
-    border-radius: $base-border-radius;
     color: white;
-    padding: $gutter*2 $gutter;
 
     .actions {
       margin-top: $gutter;
@@ -28,10 +26,12 @@
   background: $dark-gray url('../images/splash.jpg') center center no-repeat;
   background-size: cover;
   display: table;
+  text-align: center;
   width: 100%;
 
   h1 {
     font-weight: bold;
+    font-size: 2.5em;
     line-height: 1em;
   }
 
