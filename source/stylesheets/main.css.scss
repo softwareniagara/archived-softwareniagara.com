@@ -1,7 +1,15 @@
+// Global reset
 @import "reset";
+
+// Additional fonts
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+// Frontend framework
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
-@import "vendor/jquery.fullpage";
+
+// Site styles
 @import "components/base";
 @import "icons/base";
