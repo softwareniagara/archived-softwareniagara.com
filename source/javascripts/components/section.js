@@ -7,5 +7,7 @@
 
     resizeIntroduction();
     $(window).resize(resizeIntroduction);
+
+    new WOW().init();
   });
 })(jQuery);

@@ -4,16 +4,23 @@ input[type="submit"] {
   @extend %button;
   @include appearance(none);
   border: none;
+  color: white;
   cursor: pointer;
   font-family: $header-font-family;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 
+  &:hover {
+    color: white;
+  }
+
   &.alt {
     background-color: $dark-gray;
+    color: white;
     &:hover {
       background-color: lighten($dark-gray, 5%);
+      color: white;
     }
   }
 }

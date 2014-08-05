@@ -1,6 +1,5 @@
 .section {
-  text-align: left;
-  padding: $gutter*2 $gutter;
+  padding: 2em 1em;
 
   h1 { @extend .h1; }
   h2 { @extend .h2; }
@@ -8,6 +7,8 @@
   h4 { @extend .h4; }
   h5 { @extend .h5; }
   h6 { @extend .h6; }
+  p { @extend .p; }
+  a:not(.button) { @extend .a; }
 
   .content {
     @include outer-container();
@@ -15,6 +16,28 @@
 
   .actions {
     margin-top: $gutter;
+  }
+
+  .lead {
+    margin: 0 auto;
+
+    h2 {
+      margin-bottom: $gutter/2;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+}
+
+#events.section {
+  padding-left: 0;
+  padding-right: 0;
+
+  .inner {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
