@@ -1,4 +1,5 @@
 .section {
+  @extend .body;
   padding: 2em 1em;
 
   h1 { @extend .h1; }
@@ -12,6 +13,20 @@
 
   .content {
     @include outer-container();
+  }
+
+  .main {
+    @include span-columns(8);
+  }
+
+  .aside {
+    @include span-columns(4);
+  }
+
+  .well {
+    background-color: $light-gray;
+    border-radius: $base-border-radius;
+    padding: $gutter;
   }
 
   .actions {
@@ -60,4 +75,8 @@
     display: table-cell;
     vertical-align: middle;
   }
+}
+
+#about {
+  border-top: 1px solid $light-gray;
 }

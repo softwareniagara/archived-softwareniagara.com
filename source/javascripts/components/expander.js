@@ -7,6 +7,7 @@
       var $target = $($self.attr('href'));
       var $image = $target.find('.event-image img');
       var doSlide = true;
+      var pos = $target.scrollTop();
 
       $('.event-target').each(function() {
         var $self = $(this);
@@ -20,13 +21,20 @@
       });
 
       $self.removeClass('untargeted').addClass('targeted');
-      $image.addClass('animated bounceInLeft');
+
+      if ($image.hasClass('animated zoomIn')) {
+        $image.removeClass('animated zoomIn');
+      } else {
+        $image.addClass('animated zoomIn');
+      }
 
       if (doSlide) {
         $target.slideDown(300);
       } else {
         $target.show();
       }
+
+      $target.scrollTop(pos);
     });
 
     $('.event-close').on('click', function(e) {

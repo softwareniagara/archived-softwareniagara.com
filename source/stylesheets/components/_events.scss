@@ -3,7 +3,7 @@
 
   li {
     @include span-columns(4);
-    background-color: $dark-gray;
+    background-color: lighten($dark-gray, 5%);
     text-align: center;
   }
 
@@ -32,18 +32,22 @@
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-bottom-color: $light-gray;
-    border-width: 15px;
+    border-bottom-color: $powder-blue;
+    border-width: 50px;
     left: 50%;
-    margin: -20px 0 0 -15px;
+    margin: -68px 0 0 -50px;
   }
 }
 
 .event {
-  background: $light-gray;
-  margin-top: 10px;
-  padding: 2em 0 1em 0;
+  background: $powder-blue;
+  margin-top: $gutter;
+  padding: 2em 0 2em 0;
   display: none;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 
   .content {
     @include outer-container();
@@ -52,7 +56,7 @@
 
 .event-close {
   float: right;
-  color: $medium-gray;
+  color: darken($powder-blue, 10%);
   cursor: pointer;
 }
 
