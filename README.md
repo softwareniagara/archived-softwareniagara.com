@@ -19,7 +19,7 @@ Install dependencies:
 `bundle install`
 
 Start the preview server:
-`bundle exec rake server`
+`bundle exec middleman server`
 
 Visit the website on your machine at `http://localhost:4567`.
 
