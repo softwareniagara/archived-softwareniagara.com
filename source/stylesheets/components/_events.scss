@@ -50,6 +50,12 @@
   }
 }
 
+.event-close {
+  float: right;
+  color: $medium-gray;
+  cursor: pointer;
+}
+
 .event-image {
   @include span-columns(4);
 

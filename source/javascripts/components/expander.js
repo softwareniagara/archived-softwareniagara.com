@@ -28,5 +28,13 @@
         $target.show();
       }
     });
+
+    $('.event-close').on('click', function(e) {
+      e.preventDefault();
+
+      $('.event-target').removeClass('targeted').removeClass('untargeted');
+      $('.event-image').removeClass('animated').removeClass('bounceInLeft');
+      $('.event').slideUp(100);
+    });
   });
 })(jQuery);
