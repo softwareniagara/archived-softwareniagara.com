@@ -27,6 +27,10 @@
     background-color: $light-gray;
     border-radius: $base-border-radius;
     padding: $gutter;
+
+    ul {
+      @extend %default-ul;
+    }
   }
 
   .actions {
