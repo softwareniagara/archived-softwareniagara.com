@@ -22,10 +22,10 @@
 
       $self.removeClass('untargeted').addClass('targeted');
 
-      if ($image.hasClass('animated zoomIn')) {
+      if ($image.hasClass('finished-animation')) {
         $image.removeClass('animated zoomIn');
       } else {
-        $image.addClass('animated zoomIn');
+        $image.addClass('animated zoomIn finished-animation');
       }
 
       if (doSlide) {
