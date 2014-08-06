@@ -2,19 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-
-    <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "The Middleman" %></title>
+    <title><%= current_page.data.title || "Software Niagara" %></title>
+    <meta name="description" content="<%= current_page.data.description || "Technology and startup events in the Niagara Region" %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Software Niagara">
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/touch/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x144" href="/images/touch/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/touch/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/images/touch/apple-touch-icon-57x57-precomposed.png">
+
+    <meta name="msapplication-TileImage" content="/images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#00A9C7">
+
+    <link rel="shortcut icon" href="/images/touch/touch-icon-57x57.png">
+    <link rel="shortcut icon" sizes="196x196" href="/images/touch/touch-icon-196x196.png">
+    <link rel="canonical" href="http://softwareniagara.com">
 
     <%= stylesheet_link_tag "main" %>
-    <%= javascript_include_tag  "main" %>
   </head>
-
   <body class="<%= page_classes %>">
     <%= partial "components/header" %>
     <%= yield %>
+    <%= javascript_include_tag "main" %>
   </body>
 </html>
