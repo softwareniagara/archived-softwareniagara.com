@@ -47,7 +47,6 @@ body {
   &.lead {
     @extend .h4;
     font-family: $base-font-family;
-    line-height: 1.2em;
     margin-bottom: .75em;
   }
 }
