@@ -25,13 +25,17 @@
     <link rel="shortcut icon" sizes="196x196" href="/images/touch/touch-icon-196x196.png">
     <link rel="canonical" href="http://softwareniagara.com">
 
-    <%= stylesheet_link_tag "main" %>
+    <!--[if (gt IE 8)|!(IE)]><!--><%= stylesheet_link_tag "main" %><!--<![endif]-->
   </head>
   <body class="<%= page_classes %>">
     <%= partial "components/header" %>
+    <!--[if lt IE 9]>
+    <p><strong>You are using an <u>outdated browser</u> browser, so we are giving you an <u>outdated experience</u>. Please 
+    <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</strong></p>
+    <![endif]-->
     <%= yield %>
     <%= partial "components/footer" %>
-    <%= javascript_include_tag "main" %>
+    <!--[if (gt IE 8)|!(IE)]><!--><%= javascript_include_tag "main" %><!--<![endif]-->
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-34081005-1']);
