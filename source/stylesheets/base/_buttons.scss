@@ -16,10 +16,10 @@ input[type="submit"] {
   }
 
   &.alt {
-    background-color: $dark-gray;
+    background-color: lighten($dark-gray, 5%);
     color: white;
     &:hover {
-      background-color: lighten($dark-gray, 5%);
+      background-color: lighten($dark-gray, 10%);
       color: white;
     }
   }

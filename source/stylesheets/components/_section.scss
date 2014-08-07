@@ -1,6 +1,6 @@
 .section {
   @extend .body;
-  padding: 2em 1em;
+  padding: 5em 1em;
 
   h1 { @extend .h1; }
   h2 { @extend .h2; }
@@ -79,8 +79,18 @@
     display: table-cell;
     vertical-align: middle;
   }
+
+  .button {
+    font-size: 1.68em;
+  }
 }
 
 #about {
-  border-top: 1px solid $light-gray;
+  background-color: $light-gray;
+  border-top: 1px solid darken($light-gray, 5%);
+  border-bottom: 1px solid darken($light-gray, 5%);
+
+  .well {
+    background-color: darken($light-gray, 5%);
+  }
 }
