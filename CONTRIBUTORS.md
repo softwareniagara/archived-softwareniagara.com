@@ -1,4 +1,4 @@
-# softwareniagara.com Contributors
+# Contributors
 
 This list of contributors is sorted alphabetically. Add yourself to this list if
 you have contributed to the website or its content.
