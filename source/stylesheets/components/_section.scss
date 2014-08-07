@@ -50,13 +50,28 @@
   }
 }
 
+@media (max-width: $medium-screen) { 
+  .section {
+    padding: 1em 1em;
+
+    .main {
+      @include span-columns(12);
+      margin-bottom: 1.5em;
+    }
+
+    .aside {
+      @include span-columns(12);
+    }
+  }
+}
+
 #events.section {
   padding-left: 0;
   padding-right: 0;
 
   .inner {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -82,6 +97,24 @@
 
   .button {
     font-size: 1.68em;
+  }
+}
+
+@media (max-width: $medium-screen) { 
+  #introduction {
+    h1 {
+      font-size: 1.5em;
+    }
+
+    h3 {
+      font-size: 1em;
+    }
+
+    .button {
+      display: block;
+      font-size: 1em;
+      margin-bottom: .5em;
+    }
   }
 }
 

@@ -41,6 +41,23 @@
   }
 }
 
+@media (max-width: $medium-screen) { 
+  #footer {
+    .logo {
+      display: none;
+    }
+
+    .notice {
+      @include span-columns(12);
+      margin-bottom: 1.5em;
+    }
+
+    .social {
+      @include span-columns(12);
+    }
+  }
+}
+
 #foot {
   background-color: darken($dark-gray, 10%);
   color: white;

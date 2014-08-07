@@ -42,7 +42,7 @@
 .event {
   background: $powder-blue;
   margin-top: $gutter;
-  padding: 2em 0 2em 0;
+  padding: 2em 1em 2em 1em;
   display: none;
 
   p:last-child {
@@ -70,4 +70,29 @@
 
 .event-details {
   @include span-columns(8);
+}
+
+@media (max-width: $medium-screen) { 
+  .events {
+    display: none;
+  }
+
+  .event {
+    background: transparent;
+    display: block;
+    padding: 0 1em;
+    margin-bottom: $gutter * 2;
+  }
+
+  .event-close {
+    display: none;
+  }
+
+  .event-image {
+    @include span-columns(12);
+  }
+
+  .event-details {
+    @include span-columns(12);
+  }
 }
