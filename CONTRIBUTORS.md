@@ -10,3 +10,5 @@ you have contributed to the website or its content.
   * Design
   * Development
   * Photography
+* [Sandra Tournemille](http://www.imagepropellerstudios.com)
+  * Photography
