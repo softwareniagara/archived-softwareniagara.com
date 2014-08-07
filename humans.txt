@@ -1,0 +1,26 @@
+/* TEAM */
+Developer: Software Niagara
+Website: https://github.com/softwareniagara/softwareniagara.com/blob/master/CONTRIBUTORS.md
+Twitter: @softwareniagara
+Location: St. Catharines, Canada
+              
+/* THANKS */              
+Name: Cowork Niagara
+Website: http://www.coworkniagara.com
+
+Name: FueledMinds
+Website: http://www.fueledminds.com
+
+Name: Startup Niagara
+Website: http://www.startupniagara.com
+
+Name: Software Hamilton
+Website: http://www.softwarehamilton.com
+
+Name: Startup North
+Website: http://www.startupnorth.ca
+                            
+/* SITE */ 
+Standards: HTML5, CSS3        
+Components: jQuery, Wow, Animate         
+Software: Middleman
