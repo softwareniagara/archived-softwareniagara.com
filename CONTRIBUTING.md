@@ -8,7 +8,7 @@ website would not be possible without contributions from the community.
 
 * Fork the repository
 * Add or edit content
-* Insert or update your entry in [CONTRIBUTORS.md](contributors.md)
+* Insert or update your entry in [CONTRIBUTORS.md](CONTRIBUTORS.md)
 * Commit your changes
 * Submit a pull request
 
