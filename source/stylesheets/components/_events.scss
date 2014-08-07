@@ -25,7 +25,7 @@
   }
 
   &.targeted:after {
-    top: auto;
+    bottom: -32px;
     border: solid transparent;
     content: " ";
     height: 0;
@@ -35,7 +35,7 @@
     border-bottom-color: $powder-blue;
     border-width: 50px;
     left: 50%;
-    margin: -68px 0 0 -50px;
+    margin: 0 0 0 -50px;
   }
 }
 
@@ -79,7 +79,7 @@
 
   .event {
     background: transparent;
-    display: block;
+    display: block !important; // Important used incase block hidden with javascript
     padding: 0 1em;
     margin-bottom: $gutter * 2;
   }
