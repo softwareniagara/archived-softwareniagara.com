@@ -7,6 +7,7 @@
 
     resizeIntroduction();
     $(window).resize(resizeIntroduction);
+    $('.navigation-overlay').removeClass('hidden');
 
     new WOW().init();
   });
