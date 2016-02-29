@@ -62,7 +62,7 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash, ignore: 'images/social/facebook.jpg'
+  activate :asset_hash, ignore: ['images/social/facebook.jpg', '../fonts/icons/ionicons.eot', '../fonts/icons/ionicons.svg', '../fonts/icons/ionicons.ttf', '../fonts/icons/ionicons.woff']
 
   # Use relative URLs
   activate :relative_assets
@@ -72,6 +72,6 @@ configure :build do
 end
 
 activate :deploy do |deploy|
-  deploy.build_before = true 
+  deploy.build_before = true
   deploy.method = :git
 end
