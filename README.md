@@ -1,4 +1,10 @@
+[![software niagara](https://github.com/softwareniagara/marketing/blob/master/logos/software-niagara/software-niagara.png)](http://www.softwareniagara.com)
+
 # softwareniagara.com
+
+[![license](https://img.shields.io/badge/license-ISC-blue.svg?style=flat)](LICENSE.md)
+[![license](https://img.shields.io/badge/license-CC-blue.svg?style=flat)](http://creativecommons.org/licenses/by/4.0/)
+[![code of conduct](https://img.shields.io/badge/code%20of%20conduct-contributor%20covenant-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 This is the repository for the Software Niagara marketing website. It includes
 information on Software Niagara, which is a grassroots initiative to connect
