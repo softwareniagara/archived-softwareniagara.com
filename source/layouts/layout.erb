@@ -8,6 +8,15 @@
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Software Niagara" %></title>
 
+    <!-- Open Graph data-->
+    <meta property="og:title" content="<%= current_page.data.title || 'Software Niagara'%>">
+    <meta property="og:description" content="<%= current_page.data.description || 'A grassroots initiative to connect the Software Community in Niagara' %>">
+    <meta property="og:image" content="<%= current_page.data.image || '/images/cards/open-graph_1200x630.png'%>">
+    <meta property="og:site_name" content="Software Niagara">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.softwareniagara.com<%= current_page.url %>">
+
     <link rel="icon" href="/images/icons/favicon_16x16.png" sizes="16x16">
     <link rel="icon" href="/images/icons/favicon_32x32.png" sizes="32x32">
     <link rel="icon" href="/images/icons/favicon_48x48.png" sizes="48x48">
