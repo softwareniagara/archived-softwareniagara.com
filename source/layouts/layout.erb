@@ -6,29 +6,29 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Software Niagara" %></title>
+    <title><%= page_title(current_page.data.title) %></title>
 
     <!-- Open Graph data-->
-    <meta property="og:title" content="<%= current_page.data.title || 'Software Niagara'%>">
-    <meta property="og:description" content="<%= current_page.data.description || 'A grassroots initiative to connect the Software Community in Niagara' %>">
-    <meta property="og:image" content="<%= current_page.data.image || '/images/cards/open-graph_1200x630.png'%>">
-    <meta property="og:site_name" content="Software Niagara">
+    <meta property="og:title" content="<%= page_title(current_page.data.title) %>">
+    <meta property="og:description" content="<%= page_description(current_page.data.description) %>">
+    <meta property="og:image" content="<%= page_image(current_page.data.image) %>">
+    <meta property="og:site_name" content="<%= site_name %>">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.softwareniagara.com<%= current_page.url %>">
+    <meta property="og:url" content="<%= page_url(current_page.url) %>">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@softwareniagara">
-    <meta name="twitter:url" content="http://www.softwareniagara.com<%= current_page.url %>">
-    <meta name="twitter:title" content="<%= current_page.data.title || 'Software Niagara'%>">
-    <meta name="twitter:description" content="<%= current_page.data.description || 'A grassroots initiative to connect the Software Community in Niagara' %>">
-    <meta name="twitter:image" content="<%= current_page.data.image || '/images/cards/open-graph_1200x630.png'%>">
+    <meta name="twitter:site" content="<%= site_handle %>">
+    <meta name="twitter:url" content="<%= page_url(current_page.url) %>">
+    <meta name="twitter:title" content="<%= page_title(current_page.data.title) %>">
+    <meta name="twitter:description" content="<%= page_description(current_page.data.description) %>">
+    <meta name="twitter:image" content="<%= page_image(current_page.data.image) %>">
 
     <!-- Schema.org -->
-    <meta itemprop="name" content="<%= current_page.data.title || 'Software Niagara'%>">
-    <meta itemprop="description" content="<%= current_page.data.description || 'A grassroots initiative to connect the Software Community in Niagara' %>">
-    <meta itemprop="image" content="http://www.softwareniagara.com<%= current_page.url %>">
+    <meta itemprop="name" content="<%= page_title(current_page.data.title) %>">
+    <meta itemprop="description" content="<%= page_description(current_page.data.description) %>">
+    <meta itemprop="image" content="<%= page_url(current_page.url) %>">
 
     <link rel="icon" href="/images/icons/favicon_16x16.png" sizes="16x16">
     <link rel="icon" href="/images/icons/favicon_32x32.png" sizes="32x32">
