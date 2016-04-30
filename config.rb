@@ -1,38 +1,53 @@
-###
-# Page options, layouts, aliases and proxies
-###
-
-# Per-page layout changes:
-#
-# With no layout
+# Serve pages with no layout
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# With alternative layout
-# page "/path/to/file.html", layout: :otherlayout
+# Template helpers
+helpers do
+  def page_title(title)
+    (title) ? "#{title} | #{site_name}" : site_name
+  end
 
-# Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
-#  which_fake_page: "Rendering a fake page with a local variable" }
+  def page_description(description)
+    description || "A grassroots initiative to connect the Software Community in Niagara"
+  end
 
-# General configuration
+  def page_image(image)
+    image || "/images/cards/open-graph_1200x630.png"
+  end
 
-# Reload the browser automatically whenever files change
-configure :development do
-  activate :livereload
+  def page_url(url)
+    "#{site_url}#{url}"
+  end
+
+  def site_name
+    "Software Niagara"
+  end
+
+  def site_url
+    "http://www.softwareniagara.com"
+  end
+
+  def site_handle
+    "@softwareniagara"
+  end
 end
 
-###
-# Helpers
-###
+#  External pipeline configuration
+activate :external_pipeline,
+         name: :webpack,
+         command: build? ?
+           "BUILD_PRODUCTION=1 ./node_modules/webpack/bin/webpack.js --bail -p" :
+           "BUILD_DEVELOPMENT=1 ./node_modules/webpack/bin/webpack.js --watch -d --progress --color",
+         source: ".tmp/dist",
+         latency: 1
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+# Development-specific configuration
+configure :development do
+  # Use live reload
+  activate :livereload
+end
 
 # Build-specific configuration
 configure :build do
