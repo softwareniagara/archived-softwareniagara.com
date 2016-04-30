@@ -18,12 +18,18 @@ generator written in Ruby. Using Middleman allows us to store all of the
 source code and content for the website in GitHub. It also allows us to
 accept contributions from the community via pull requests.
 
-You will need Ruby 2.3 and Bundler installed on your system to run this website.
+You will need the following installed on your system to run this website:
+
+* NodeJS >= 4.0
+* NPM
+* Ruby 2.3
+* Bundler
 
 Run these commands from the project directory to install dependencies, run
 the development server, and visit the website in your default browser.
 
 ```
+npm install
 bundle install --path vendor/bundle
 bundle exec middleman server
 open http://localhost:4567
