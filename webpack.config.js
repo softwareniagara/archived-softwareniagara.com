@@ -10,7 +10,7 @@ var definePlugin = new webpack.DefinePlugin({
 var siteConfig = {
   entry: {
     index: [
-      './source/stylesheets/index.scss',
+      './source/stylesheets/index.css',
       './source/javascripts/index.js'
     ]
   },
@@ -44,17 +44,11 @@ var siteConfig = {
         loader: "imports?this=>window!exports?window.Modernizr"
       },
 
-      // Load SCSS
-      {
-        test: /.*\.scss$/,
-        loader: ExtractTextPlugin.extract(
-          "style",
-          "css!sass?sourceMap&includePaths[]=" + __dirname + "/node_modules"
-        )
-      },
-
       // Load plain-ol' vanilla CSS
-      { test: /\.css$/, loader: "style!css" },
+      { 
+          test: /\.css$/, 
+          loader: ExtractTextPlugin.extract('style', 'css!postcss')
+      },
     ],
   },
 
