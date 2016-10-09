@@ -95,8 +95,11 @@
     <%= stylesheet_link_tag "index.bundle" %>
   </head>
 
-  <body class="<%= page_classes %>">
-    <%= yield %>
+  <body class="<%= page_classes %>"> 
+    <%= partial "partials/header" %>
+    <section class="mw5 mw7-ns center bg-light-gray pa3 ph5-ns">
+      <%= yield %>
+    </section>
     <%= javascript_include_tag "index.bundle" %>
     <%= yield_content :javascripts %>
   </body>
