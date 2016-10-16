@@ -58,3 +58,7 @@ input:focus {
 .hover-white:focus {
   color: white;
 }
+
+.indigo {
+  color: #657AC6;
+}
