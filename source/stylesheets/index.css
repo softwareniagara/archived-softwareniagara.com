@@ -1,1 +1,47 @@
 @import "~tachyons";
+
+body {
+    background-color: #293051;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+a {
+  cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.ff-ds {
+    font-family: 'Droid Serif', serif;
+}
+
+.b--gulf-blue {
+    border-color: #353D5F;
+}
+
+.bg-gulf-blue {
+    background-color: #353D5F;
+}
+
+@media screen and (min-width: 30em) {
+    .bg-gulf-blue-ns {
+        background-color: #353D5F;
+    }
+}
+
+.bg-pink {
+    background-color: #F42267;
+}
+
+.hover-bg-pink:hover,
+.hover-bg-pink:focus {
+    background-color: #D0235D;
+}
