@@ -13,14 +13,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #31C376;
+  color: #F29AC5;
   cursor: pointer;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #33AC6D;
+  color: #DE8DB5;
 }
 
 input:focus {
@@ -60,5 +60,5 @@ input:focus {
 }
 
 .indigo {
-  color: #657AC6;
+  color: #95E3F4;
 }
