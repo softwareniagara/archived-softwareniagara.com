@@ -11,7 +11,7 @@
     <!-- Open Graph data-->
     <meta property="og:title" content="<%= page_title(current_page.data.title) %>">
     <meta property="og:description" content="<%= page_description(current_page.data.description) %>">
-    <meta property="og:image" content="<%= page_image(current_page.data.image) %>">
+    <meta property="og:image" content="<%= site_url %><%= page_image(current_page.data.image) %>">
     <meta property="og:site_name" content="<%= site_name %>">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
@@ -23,7 +23,7 @@
     <meta name="twitter:url" content="<%= page_url(current_page.url) %>">
     <meta name="twitter:title" content="<%= page_title(current_page.data.title) %>">
     <meta name="twitter:description" content="<%= page_description(current_page.data.description) %>">
-    <meta name="twitter:image" content="<%= page_image(current_page.data.image) %>">
+    <meta name="twitter:image" content="<%= site_url %><%= page_image(current_page.data.image) %>">
 
     <!-- Schema.org -->
     <meta itemprop="name" content="<%= page_title(current_page.data.title) %>">
