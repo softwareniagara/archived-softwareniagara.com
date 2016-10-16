@@ -16,6 +16,8 @@ a {
   color: #F29AC5;
   cursor: pointer;
   text-decoration: none;
+  -webkit-transition: color .15s ease-in-out;
+  transition: color .15s ease-in-out;
 }
 
 a:hover,
@@ -61,4 +63,9 @@ input:focus {
 
 .indigo {
   color: #95E3F4;
+}
+
+.hover-indigo:hover,
+.hover-indigo:focus {
+  color: #1BAAC6;
 }
