@@ -19,19 +19,19 @@ title: Welcome to Software Niagara
 
         <table>
           <tr>
-            <th class="indigo"><i class="material-icons">hourglass_empty</i></th>
+            <th class="indigo"><i class="material-icons">hourglass_empty</i><span class="sr-only">When</span></th>
             <td><%= event.when %></td>
           </tr>
           <tr>
-            <th class="indigo"><i class="material-icons">room</i></th>
+            <th class="indigo"><i class="material-icons">room</i><span class="sr-only">Where</span></th>
             <td><%= event.where %></td>
           </tr>
           <tr>
-            <th class="indigo"><i class="material-icons">credit_card</i></th>
+            <th class="indigo"><i class="material-icons">credit_card</i><span class="sr-only">Price</span></th>
             <td><%= event.cost %></td>
           </tr>
           <tr>
-            <th class="indigo"><i class="material-icons">face</i></th>
+            <th class="indigo"><i class="material-icons">face</i><span class="sr-only">Audience</span></th>
             <td><%= event.audience %></td>
         </table>
 
@@ -88,7 +88,7 @@ title: Welcome to Software Niagara
 <article class="cf mb4 mb2-ns pa3 tc">
   <ul class="list pa3 pa5-ns pb0 pb0-ns">
     <% data.links.social_media.each do |sm| %>
-      <li class="dib mr2"><a href="<%= sm.url %>" class="f4 f2-ns b db pa2 indigo hover-indigo" title="Follow us on <%= sm.name %>"><i class="<%= sm.class_name %>"></i></a></li>
+      <li class="dib mr2"><a href="<%= sm.url %>" class="f4 f2-ns b db pa2 indigo hover-indigo" title="Follow us on <%= sm.name %>"><i class="<%= sm.class_name %>"></i><span class="sr-only"><%= sm.class_name %></span></a></li>
     <% end %>
   </ul>
   <p>
