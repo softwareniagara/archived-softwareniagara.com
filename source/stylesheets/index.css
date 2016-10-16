@@ -2,17 +2,25 @@
 
 body {
     background-color: #293051;
-    color: white;
+    color: #DCEEFE;
     font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
 }
 
 a {
+  color: #31C376;
   cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #33AC6D;
 }
 
 input:focus {
@@ -44,4 +52,9 @@ input:focus {
 .hover-bg-pink:hover,
 .hover-bg-pink:focus {
     background-color: #D0235D;
+}
+
+.hover-white:hover,
+.hover-white:focus {
+  color: white;
 }

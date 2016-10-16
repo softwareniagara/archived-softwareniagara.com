@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="693px" height="298px" viewBox="0 0 693 298" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.2 (33826) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-253.000000, -1166.000000)" id="Group-2">
+            <g transform="translate(240.000000, 1166.000000)">
+                <text id="DEV" font-family="Montserrat-Regular, Montserrat" font-size="144" font-weight="normal" letter-spacing="-3.4285717" fill="#FFFFFF">
+                    <tspan x="0" y="167">DEV</tspan>
+                    <tspan x="295.138285" y="167" font-size="42" letter-spacing="-1"></tspan>
+                </text>
+                <text id="TRX" font-family="Montserrat-Regular, Montserrat" font-size="144" font-weight="normal" letter-spacing="-3.4285717" fill="#FFFFFF">
+                    <tspan x="429" y="167">TRX</tspan>
+                </text>
+                <polygon id="Symbol" fill="#00AAC8" points="421.117188 1 387.039063 96 429.086655 96 296.039063 298 342.039063 153 296 153 342 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
