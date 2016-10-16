@@ -1,0 +1,9 @@
+supporters:
+  - name: Cowork Niagara
+    url: http://www.coworkniagara.com
+    logo: /images/logos/coworkniagara.svg
+    class_name: tr
+  - name: JetBrains
+    url: https://www.jetbrains.com
+    logo: /images/logos/jetbrains.svg
+    class_name: tl
