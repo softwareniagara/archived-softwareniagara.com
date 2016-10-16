@@ -40,7 +40,7 @@ This website is deployed to Github pages with Middleman Deploy.
 
 ```
 middleman build [--clean]
-$ middleman deploy [--build-before]
+middleman deploy [--build-before]
 ```
 
 ## Contributing
