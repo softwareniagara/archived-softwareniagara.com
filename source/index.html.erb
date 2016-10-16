@@ -6,163 +6,41 @@ title: Welcome to Software Niagara
   <header>
     <h2 class="f2 tc indigo">Our Events</h2>
   </header>
-  <article class="cf mb5 mb6-ns">
-    <div class="fl w-100 w-40-ns tc pa3 pt1 pb1">
-      <img src="/images/logos/devtrx.svg" alt="DevTrx" class="w-60 w-100-ns" style="margin-top: 1.35rem" />
-    </div>
-    <div class="fl w-100 w-60-ns pa3 pt1 pb1">
-      <h2 class="f5 f4-ns lh-title">
-        Learn tricks of the trade from local software professionals at DevTrx
-      </h2>
+  
+  <% data.events.events.each do |event| %>
+    <article class="cf mb5 mb6-ns">
+      <div class="fl w-100 w-40-ns tc pa3 pt1 pb1">
+        <img src="<%= event.logo %>" alt="<%= event.name %>" class="w-60 w-100-ns" style="margin-top: 1.35rem" />
+      </div>
+      <div class="fl w-100 w-60-ns pa3 pt1 pb1">
+        <h3 class="f5 f4-ns lh-title"><%= event.title %></h3>
 
-      <p class="lh-copy">
-        You are welcome to join us for DevTrx at Cowork Niagara on the <b>second
-        Monday of every month</b>. You can expect three presentations at each event.
-        The presentations cover a variety of topics, including programming languages,
-        libraries and frameworks, testing, architecture, user experience, and more.
-      </p>
+        <%= event.body %>
 
-      <p class="lh-copy">
-        This event is suitable for students, hobbyists, and professional software
-        developers &mdash; all of whom are welcome to present as well.
-      </p>
+        <table>
+          <tr>
+            <th class="indigo"><i class="material-icons">hourglass_empty</i></th>
+            <td><%= event.when %></td>
+          </tr>
+          <tr>
+            <th class="indigo"><i class="material-icons">room</i></th>
+            <td><%= event.where %></td>
+          </tr>
+          <tr>
+            <th class="indigo"><i class="material-icons">credit_card</i></th>
+            <td><%= event.cost %></td>
+          </tr>
+          <tr>
+            <th class="indigo"><i class="material-icons">face</i></th>
+            <td><%= event.audience %></td>
+        </table>
 
-      <p class="lh-copy">
-        Check <a href="https://www.meetup.com/software-niagara/">meetup.com</a> for
-        the schedule or email <a href="mailto:info@softwareniagara.com" class="js-open-beacon">info@softwareniagara.com</a>
-        about presenting.
-      </p>
-
-      <table>
-        <tr>
-          <th class="indigo"><i class="material-icons">hourglass_empty</i></th>
-          <td>Second Monday of the month @ 7PM</td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">room</i></th>
-          <td><a href="http://www.coworkniagara.com">Cowork Niagara</a></td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">credit_card</i></th>
-          <td>Free</td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">face</i></th>
-          <td>Beginner-Advanced</td>
-      </table>
-
-      <p>
-        <a href="https://www.meetup.com/software-niagara/" class="f5 pa3 button-reset bg-animate bg-pink hover-bg-pink br3 white hover-white db dib-ns tc mt4">Register on Meetup.com</a>
-      </p>
-    </div>
-  </article>
-
-  <article class="cf mb5 mb6-ns">
-    <div class="fl w-100 w-40-ns tc pa3 pt1 pb1">
-      <img src="/images/logos/doyousomethingforgreatgood.svg" alt="Do You Something For Great Good" class="w-60 w-100-ns" style="margin-top: 1.35rem" />
-    </div>
-    <div class="fl w-100 w-60-ns pa3 pt1 pb1">
-      <h2 class="f5 f4-ns lh-title">
-        Work on something you love. Just do good and be great!
-      </h2>
-
-      <p class="lh-copy">
-        This is a <b>new weekly event</b> presented by Software Niagara and hosted
-        at Cowork Niagara. It's an opportunity for you to come out and work on something
-        you love, learn new things, and chat about the latest &amp; greatest in tech.
-      </p>
-
-      <p class="lh-copy">
-        A general topic is provided for this event but there is no set discussion
-        or activites. At its core, this event is an opportunity to get together
-        with your peers. You choose what to make of it. Spend the evening talking,
-        listening to interesting conversations, or working on the next big thing.
-        You decide. Just do good and be great!
-      </p>
-
-      <p class="lh-copy">
-        This event is suitable for students, those new to coding, and people working
-        on side projects.
-      </p>
-
-      <table>
-        <tr>
-          <th class="indigo"><i class="material-icons">hourglass_empty</i></th>
-          <td>Every Wednesday @ 7PM</td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">room</i></th>
-          <td><a href="http://www.coworkniagara.com">Cowork Niagara</a></td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">credit_card</i></th>
-          <td>Free</td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">face</i></th>
-          <td>Beginner-Intermediate</td>
-      </table>
-
-      <p>
-        <a href="http://www.meetup.com/software-niagara/" class="f5 pa3 button-reset bg-animate bg-pink hover-bg-pink br3 white hover-white db dib-ns tc mt4">Register on Meetup.com</a>
-      </p>
-    </div>
-  </article>
-
-  <article class="cf mb5 mb6-ns">
-    <div class="fl w-100 w-40-ns tc pa3 pt1 pb1">
-      <img src="/images/logos/democamp.svg" alt="DemoCamp" class="w-60 w-100-ns" style="margin-top: 1.35rem" />
-    </div>
-    <div class="fl w-100 w-60-ns pa3 pt1 pb1">
-      <h2 class="f5 f4-ns lh-title">
-        Celebrate Made-in-Niagara Apps &amp; Games at a Show-and-Tell with cocktails
-      </h2>
-
-      <p class="lh-copy">
-        Great things are being built right here in Niagara and we want to shine a
-        spotlight on those products and the teams behind them.
-      </p>
-
-      <p class="lh-copy">
-        From time-to-time we host DemoCamp Niagara to provide five local entrepreneurs
-        with the opportunity to show-off the tech products they've built. Each product
-        gets a 5-minute demo followed by a 5-minute question and answer period. We
-        even throw in free snacks and an inspirational keynote.
-      </p>
-
-      <p class="lh-copy">
-        Some alumni of DemoCamp Niagara include these local rockstars: Every1Games,
-        PixelNAUTS, Phantom Compass, Upper Rapids, Niagara Artists Centre, Furi Enterprises,
-        Protecht, Mulberry Media, Glacier Digital, and Brock University.
-      </p>
-
-      <p class="lh-copy">
-        This event is suitable for everyone.
-      </p>
-
-      <table>
-        <tr>
-          <th class="indigo"><i class="material-icons">hourglass_empty</i></th>
-          <td>To be announced</td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">room</i></th>
-          <td>To be announced</td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">credit_card</i></th>
-          <td>Free</td>
-        </tr>
-        <tr>
-          <th class="indigo"><i class="material-icons">face</i></th>
-          <td>No experience required</td>
-      </table>
-
-      <p>
-        <a href="mailto:info@softwareniagara.com" class="f5 pa3 button-reset bg-animate bg-pink hover-bg-pink br3 white hover-white db dib-ns tc mt4 js-open-beacon">Contact us to arrange a demo</a>
-      </p>
-    </div>
-  </article>
+        <p>
+          <a href="<%= event.link_url %>" class="f5 pa3 button-reset bg-animate bg-pink hover-bg-pink br3 white hover-white db dib-ns tc mt4"><%= event.link_title %></a>
+        </p>
+      </div>
+    </article>
+  <% end %>
 </section>
 
 <article class="cf mb5 mb6-ns pa3">
@@ -190,7 +68,7 @@ title: Welcome to Software Niagara
     our community. Help us build the tech community that you want.
   </p>
   <p class="f6 f4-ns lh-copy measure center tc">
-    <a href="mailto:info@softwareniagara.com" class="f5 pa3 button-reset bg-animate bg-pink hover-bg-pink br3 white hover-white db dib-ns tc mt4 js-open-beacon">Contact us to volunteer</a>
+    <a href="mailto:info@softwareniagara.com" class="f5 pa3 button-reset bg-animate bg-pink hover-bg-pink br3 white hover-white db dib-ns tc mt4">Contact us to volunteer</a>
   </p>
 </article>
 
@@ -199,21 +77,19 @@ title: Welcome to Software Niagara
     <h2 class="f2 tc indigo mb0">Our Supporters</h2>
   </header>
   <article class="cf mb4">
-    <div class="fl w-50 tr pa3 pt1 pb1">
-      <a href="http://www.coworkniagara.com"><img src="/images/logos/coworkniagara.svg" alt="DevTrx" class="w-100 w-50-m w-25-l" style="margin-top: 1.35rem" /></a>
-    </div>
-    <div class="fl w-50 tl pa3 pt1 pb1">
-      <a href="http://www.jetbrains.com"><img src="/images/logos/jetbrains.svg" alt="DevTrx" class="w-100 w-50-m w-25-l" style="margin-top: 1.35rem" /></a>
-    </div>
+    <% data.supporters.supporters.each do |supporter| %>
+      <div class="fl w-50 pa3 pt1 pb1 <%= supporter.class_name %>">
+        <a href="<%= supporter.url %>"><img src="<%= supporter.logo %>" alt="<%= supporter.name %>" class="w-100 w-50-m w-25-l" style="margin-top: 1.35rem" /></a>
+      </div>
+    <% end %>
   </article>
 </section>
 
 <article class="cf mb5 mb6-ns pa3 tc">
   <ul class="list pa3 pa5-ns pb0 pb0-ns">
-    <li class="dib mr2"><a href="https://twitter.com/softwareniagara" class="f4 f2-ns b db pa2 indigo hover-indigo"><i class="socicon-twitter"></i></a></li>
-    <li class="dib mr2"><a href="https://facebook.com/softwareniagara" class="f4 f2-ns b db pa2 indigo hover-indigo"><i class="socicon-facebook"></i></a></li>
-    <li class="dib mr2"><a href="https://github.com/softwareniagara" class="f4 f2-ns b db pa2 indigo hover-indigo"><i class="socicon-github"></i></a></li>
-    <li class="dib mr2"><a href="https://github.com/software-niagara" class="f4 f2-ns b db pa2 indigo hover-indigo"><i class="socicon-meetup"></i></a></li>
+    <% data.links.social_media.each do |sm| %>
+      <li class="dib mr2"><a href="<%= sm.url %>" class="f4 f2-ns b db pa2 indigo hover-indigo" title="Follow us on <%= sm.name %>"><i class="<%= sm.class_name %>"></i></a></li>
+    <% end %>
   </ul>
   <p>
     Chat with us on <a href="https://forum.softwareniagara.com">forum.softwareniagara.com</a>
