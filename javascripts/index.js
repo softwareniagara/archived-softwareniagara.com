@@ -1,0 +1,1 @@
+!function(n){n(document).ready(function(){n('[href="mailto:info@softwareniagara.com"]').on("click",function(n){n.preventDefault(),HS&&HS.beacon&&HS.beacon.open()})})}(jQuery);
