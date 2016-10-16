@@ -32,7 +32,7 @@ events:
     when: Every Wednesday @ 7PM
     where: <a href="http://www.coworkniagara.com">Cowork Niagara</a>
     cost: Free
-    audience: Begineer-Intermediate
+    audience: Beginner-Intermediate
     link_title: Register on Meetup.com
     link_url: https://www.meetup.com/software-niagara/
     body: |
