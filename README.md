@@ -8,8 +8,7 @@
 
 This is the repository for the Software Niagara marketing website. It includes
 information on Software Niagara, which is a grassroots initiative to connect
-the software community in the Niagara Region. Over time, we hope to include
-software-related news and articles.
+the software community in the Niagara Region.
 
 ## Getting Started
 
