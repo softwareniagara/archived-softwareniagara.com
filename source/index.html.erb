@@ -1,0 +1,97 @@
+---
+title: Welcome to Software Niagara
+---
+
+<section>
+  <header>
+    <h2 class="f2 tc indigo">Our Events</h2>
+  </header>
+  
+  <% data.events.events.each do |event| %>
+    <article class="cf mb5 mb6-ns">
+      <div class="fl w-100 w-40-ns tc pa3 pt1 pb1">
+        <img src="<%= event.logo %>" alt="<%= event.name %>" class="w-60 w-100-ns" style="margin-top: 1.35rem" />
+      </div>
+      <div class="fl w-100 w-60-ns pa3 pt1 pb1">
+        <h3 class="f5 f4-ns lh-title"><%= event.title %></h3>
+
+        <%= event.body %>
+
+        <table>
+          <tr>
+            <th class="indigo"><i class="material-icons">hourglass_empty</i></th>
+            <td><%= event.when %></td>
+          </tr>
+          <tr>
+            <th class="indigo"><i class="material-icons">room</i></th>
+            <td><%= event.where %></td>
+          </tr>
+          <tr>
+            <th class="indigo"><i class="material-icons">credit_card</i></th>
+            <td><%= event.cost %></td>
+          </tr>
+          <tr>
+            <th class="indigo"><i class="material-icons">face</i></th>
+            <td><%= event.audience %></td>
+        </table>
+
+        <p>
+          <a href="<%= event.link_url %>" class="f5 pa3 button-reset bg-animate bg-pink hover-bg-pink br3 white hover-white db dib-ns tc mt4"><%= event.link_title %></a>
+        </p>
+      </div>
+    </article>
+  <% end %>
+</section>
+
+<article class="cf mb5 mb6-ns pa3">
+  <h2 class="f2 tc indigo">Our Story</h2>
+  <p class="f6 f4-ns lh-copy measure center">
+    Software Niagara was founded in 2012. Inspired by grassroots tech communities that
+    were popping up in nearby cities, like <a href="http://www.softwarehamilton.com">
+    Software Hamilton</a> and <a href="http://www.startupnorth.ca">Startup North</a>,
+    a couple local developers set out to create a similar community in the Niagara Region.
+    Over the years, we have organized numerous DemoCamps, Hackathons, and
+    other meetups. And until this day, thanks to our volunteers and supporters,
+    we continue to organize events for the tech community in the spirit of our mission.
+  </p>
+  <blockquote class="ph0 f4 f1-ns ff-ds measure-narrow center">
+    <p class="fw9 lh-copy lh-title-ns">
+      Our mission is to foster a <em>community</em> in Niagara that encourages and supports software development and the creation of software-based businesses.
+    </p>
+  </blockquote>
+  <p class="f6 f4-ns lh-copy measure center">
+    We are a grassroots community. Our events, <a href="https://www.meetup.com/software-niagara">meetup group</a>,
+    and <a href="https://forum.softwareniagara.com">forum</a> are all organized
+    and run by a group of volunteers that has continued to grow over the years. While we
+    encourage everyone to come out to our events and be part of our community, we also
+    encourage everyone to volunteer with Software Niagara and help shape the future of
+    our community. Help us build the tech community that you want.
+  </p>
+  <p class="f6 f4-ns lh-copy measure center tc">
+    <a href="mailto:info@softwareniagara.com" class="f5 pa3 button-reset bg-animate bg-pink hover-bg-pink br3 white hover-white db dib-ns tc mt4">Contact us to volunteer</a>
+  </p>
+</article>
+
+<section>
+  <header>
+    <h2 class="f2 tc indigo mb0">Our Supporters</h2>
+  </header>
+  <article class="cf mb4">
+    <% data.supporters.supporters.each do |supporter| %>
+      <div class="fl w-50 pa3 pt1 pb1 <%= supporter.class_name %>">
+        <a href="<%= supporter.url %>"><img src="<%= supporter.logo %>" alt="<%= supporter.name %>" class="w-100 w-50-m w-25-l" style="margin-top: 1.35rem" /></a>
+      </div>
+    <% end %>
+  </article>
+</section>
+
+<article class="cf mb5 mb6-ns pa3 tc">
+  <ul class="list pa3 pa5-ns pb0 pb0-ns">
+    <% data.links.social_media.each do |sm| %>
+      <li class="dib mr2"><a href="<%= sm.url %>" class="f4 f2-ns b db pa2 indigo hover-indigo" title="Follow us on <%= sm.name %>"><i class="<%= sm.class_name %>"></i></a></li>
+    <% end %>
+  </ul>
+  <p>
+    Chat with us on <a href="https://forum.softwareniagara.com">forum.softwareniagara.com</a>
+  </p>
+</article>

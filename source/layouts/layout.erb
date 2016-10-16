@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= page_title(current_page.data.title) %></title>
+
+    <!-- Open Graph data-->
+    <meta property="og:title" content="<%= page_title(current_page.data.title) %>">
+    <meta property="og:description" content="<%= page_description(current_page.data.description) %>">
+    <meta property="og:image" content="<%= page_image(current_page.data.image) %>">
+    <meta property="og:site_name" content="<%= site_name %>">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= page_url(current_page.url) %>">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="<%= site_handle %>">
+    <meta name="twitter:url" content="<%= page_url(current_page.url) %>">
+    <meta name="twitter:title" content="<%= page_title(current_page.data.title) %>">
+    <meta name="twitter:description" content="<%= page_description(current_page.data.description) %>">
+    <meta name="twitter:image" content="<%= page_image(current_page.data.image) %>">
+
+    <!-- Schema.org -->
+    <meta itemprop="name" content="<%= page_title(current_page.data.title) %>">
+    <meta itemprop="description" content="<%= page_description(current_page.data.description) %>">
+    <meta itemprop="image" content="<%= page_url(current_page.url) %>">
+
+    <link rel="icon" href="/images/icons/favicon_16x16.png" sizes="16x16">
+    <link rel="icon" href="/images/icons/favicon_32x32.png" sizes="32x32">
+    <link rel="icon" href="/images/icons/favicon_48x48.png" sizes="48x48">
+    <link rel="icon" href="/images/icons/favicon_62x62.png" sizes="62x62">
+
+    <!-- Disable automatic detection and formatting of possible phone numbers -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Add to Home Screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Software Niagara">
+
+    <!-- Touch Icons -->
+    <link rel="apple-touch-icon" href="/images/icons/apple-touch-icon.png">
+
+    <!-- Startup Images-->
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_1536x2008.png"
+      media="(device-width: 768px) and (device-height: 1024px)
+             and (-webkit-device-pixel-ratio: 2)
+             and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_1496x2048.png"
+          media="(device-width: 768px) and (device-height: 1024px)
+                 and (-webkit-device-pixel-ratio: 2)
+                 and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_768x1004.png"
+          media="(device-width: 768px) and (device-height: 1024px)
+                 and (-webkit-device-pixel-ratio: 1)
+                 and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_748x1024.png"
+          media="(device-width: 768px) and (device-height: 1024px)
+                 and (-webkit-device-pixel-ratio: 1)
+                 and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_1242x2148.png"
+          media="(device-width: 414px) and (device-height: 736px)
+                 and (-webkit-device-pixel-ratio: 3)
+                 and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_1182x2208.png"
+          media="(device-width: 414px) and (device-height: 736px)
+                 and (-webkit-device-pixel-ratio: 3)
+                 and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_750x1294.png"
+          media="(device-width: 375px) and (device-height: 667px)
+                 and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_640x1096.png"
+          media="(device-width: 320px) and (device-height: 568px)
+                 and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_640x920.png"
+          media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 2)">
+    <link rel="apple-touch-startup-image" href="/images/icons/apple-touch-startup_320x460.png"
+          media="(device-width: 320px) and (device-height: 480px)
+                 and (-webkit-device-pixel-ratio: 1)">
+
+    <!-- Android -->
+    <meta name="theme-color" content="#3E4651">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+
+    <%= stylesheet_link_tag "index.bundle" %>
+  </head>
+
+  <body class="<%= page_classes %>"> 
+    <%= partial "partials/header" %>
+    <section class="mw6 mw8-ns center pa3">
+      <%= yield %>
+    </section>
+    <%= javascript_include_tag "index.bundle" %>
+    <%= yield_content :javascripts %>
+    <script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!1,baseUrl:""},contact:{enabled:!0,formId:"d631f39a-859e-11e6-91aa-0a5fecc78a4d"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
+    <script>
+      HS.beacon.config({
+        color: '#1BAAC6',
+        attachment: false,
+        instructions:'Let us know how we can help you. Please also use this form to inquire about presenting at DevTrx and DemoCamp.'
+      });
+    </script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  </body>
+</html>

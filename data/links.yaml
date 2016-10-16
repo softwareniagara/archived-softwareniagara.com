@@ -1,0 +1,14 @@
+social_media:
+  - name: Twitter
+    url: https://twitter.com/softwareniagara
+    class_name: socicon-twitter
+  - name: Facebook
+    url: https://facebook.com/softwareniagara
+    class_name: socicon-facebook
+  - name: GitHub
+    url: https://github.com/softwareniagara 
+    class_name: socicon-github
+  - name: Meetup 
+    url: https://www.meetup.com/software-niagara
+    class_name: socicon-meetup
+  

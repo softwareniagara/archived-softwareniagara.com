@@ -1,0 +1,88 @@
+events:
+  - name: DevTrx
+    logo: /images/logos/devtrx.svg
+    title: Learn tricks of the trade from local software professionals at DevTrx
+    when: Second Monday of the month @ 7PM
+    where: <a href="http://www.coworkniagara.com">Cowork Niagara</a>
+    cost: Free
+    audience: Beginner-Advanced
+    link_title: Register on Meetup.com
+    link_url: https://www.meetup.com/software-niagara/
+    body: |
+      <p class="lh-copy">
+        You are welcome to join us for DevTrx at Cowork Niagara on the <b>second
+        Monday of every month</b>. You can expect three presentations at each event.
+        The presentations cover a variety of topics, including programming languages,
+        libraries and frameworks, testing, architecture, user experience, and more.
+      </p>
+
+      <p class="lh-copy">
+        This event is suitable for students, hobbyists, and professional software
+        developers &mdash; all of whom are welcome to present as well.
+      </p>
+
+      <p class="lh-copy">
+        Check <a href="https://www.meetup.com/software-niagara/">meetup.com</a> for
+        the schedule or email <a href="mailto:info@softwareniagara.com" class="js-open-beacon">info@softwareniagara.com</a>
+        about presenting.
+      </p>
+  - name: Do You Something 4 Great Good
+    logo: /images/logos/doyousomethingforgreatgood.svg
+    title: Work on something you love. Just do good and be great!
+    when: Every Wednesday @ 7PM
+    where: <a href="http://www.coworkniagara.com">Cowork Niagara</a>
+    cost: Free
+    audience: Begineer-Intermediate
+    link_title: Register on Meetup.com
+    link_url: https://www.meetup.com/software-niagara/
+    body: |
+      <p class="lh-copy">
+        This is a <b>new weekly event</b> presented by Software Niagara and hosted
+        at Cowork Niagara. It's an opportunity for you to come out and work on something
+        you love, learn new things, and chat about the latest &amp; greatest in tech.
+      </p>
+
+      <p class="lh-copy">
+        A general topic is provided for this event but there is no set discussion
+        or activites. At its core, this event is an opportunity to get together
+        with your peers. You choose what to make of it. Spend the evening talking,
+        listening to interesting conversations, or working on the next big thing.
+        You decide. Just do good and be great!
+      </p>
+
+      <p class="lh-copy">
+        This event is suitable for students, those new to coding, and people working
+        on side projects.
+      </p>
+  - name: DemoCamp
+    logo: /images/logos/democamp.svg
+    title: Celebrate Made-in-Niagara Apps &amp; Games at a Show-and-Tell with cocktails
+    when: To be announced
+    where: To be announced
+    cost: Free
+    audience: No experience required
+    link_title: Contact us to arrange a demo 
+    link_url: mailto:info@softwareniagara.com
+    body: |
+      <p class="lh-copy">
+        Great things are being built right here in Niagara and we want to shine a
+        spotlight on those products and the teams behind them.
+      </p>
+
+      <p class="lh-copy">
+        From time-to-time we host DemoCamp Niagara to provide five local entrepreneurs
+        with the opportunity to show-off the tech products they've built. Each product
+        gets a 5-minute demo followed by a 5-minute question and answer period. We
+        even throw in free snacks and an inspirational keynote.
+      </p>
+
+      <p class="lh-copy">
+        Some alumni of DemoCamp Niagara include these local rockstars: Every1Games,
+        PixelNAUTS, Phantom Compass, Upper Rapids, Niagara Artists Centre, Furi Enterprises,
+        Protecht, Mulberry Media, Glacier Digital, and Brock University.
+      </p>
+
+      <p class="lh-copy">
+        This event is suitable for everyone.
+      </p>
+  
