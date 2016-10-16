@@ -1,1 +1,64 @@
 @import "~tachyons";
+
+body {
+    background-color: #293051;
+    color: #DCEEFE;
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+a {
+  color: #31C376;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #33AC6D;
+}
+
+input:focus {
+    outline: none;
+}
+
+.ff-ds {
+    font-family: 'Droid Serif', serif;
+}
+
+.b--gulf-blue {
+    border-color: #353D5F;
+}
+
+.bg-gulf-blue {
+    background-color: #353D5F;
+}
+
+@media screen and (min-width: 30em) {
+    .bg-gulf-blue-ns {
+        background-color: #353D5F;
+    }
+}
+
+.bg-pink {
+    background-color: #F42267;
+}
+
+.hover-bg-pink:hover,
+.hover-bg-pink:focus {
+    background-color: #D0235D;
+}
+
+.hover-white:hover,
+.hover-white:focus {
+  color: white;
+}
+
+.indigo {
+  color: #657AC6;
+}
