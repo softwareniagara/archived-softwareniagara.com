@@ -34,6 +34,15 @@ bundle exec middleman server
 open http://localhost:4567
 ```
 
+## Deploying
+
+This website is deployed to Github pages with Middleman Deploy.
+
+```
+middleman build [--clean]
+$ middleman deploy [--build-before]
+```
+
 ## Contributing
 
 See the [contribution guidelines](CONTRIBUTING.md) for instructions on
